@@ -14,7 +14,6 @@ png-text-append: png-text-append.o crc.o
 
 png-text-dump: png-text-dump.o
 	$(CC) $(PNGFLAGS) -o $@ $^ $(PNGLIBS)
-	# $(CC) $(LIBS) -o$@ $^
 
 clean: 
 	rm -f $(BINARIES) *.o
